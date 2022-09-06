@@ -9,7 +9,6 @@ afterEach(cleanup);
 //This will ensure that after each test, we won't have any leftover memory data that could give us false results.
 //Then we'll use the describe function to declare the component we're testing, by adding the following code:
 describe('About component', () => {
-    //first test
     //The first test will be the baseline to verify that the component is rendering. To create that test, add the following code:
     it('renders', () => {
         render(<About />);
@@ -24,6 +23,4 @@ describe('About component', () => {
        expect(asFragment()).toMatchSnapshot();
        //The index.test.js.snap file is a serialized version of the component's node structure, which includes elements, attributes, and text content. This file, stored in the __snapshots__ folder, will serve as the base model of the component's structure, and will be compared against new snapshots that are created by the asFragment function.
     });
-
-    //second test
 })
